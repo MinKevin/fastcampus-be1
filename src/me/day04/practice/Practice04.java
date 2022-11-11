@@ -6,11 +6,11 @@ public class Practice04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("(x, y) : ");
+        System.out.print("(x, y) : "); // "(1, 2)"
 
         String point = scanner.nextLine();
-        point = point.replace("(", "");
-        point = point.replace(")", "");
+        point = point.replace("(", ""); // String Method
+        point = point.replace(")", ""); // String Method
         String[] strings = point.split(",");
 
         double x = Double.parseDouble(strings[0]);
