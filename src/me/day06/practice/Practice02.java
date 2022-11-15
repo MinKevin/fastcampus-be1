@@ -33,7 +33,7 @@ public class Practice02 {
 
 
 
-        //
+        //강사님
         final int STUDENT_NUM = 5;
         final int SUBJECT_NUM = 3;
 

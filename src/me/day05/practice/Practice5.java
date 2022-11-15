@@ -10,8 +10,8 @@ public class Practice5 {
                     nxtNum++;
 
                 if (i * i + j * j == nxtNum * nxtNum){
-                    answer++;
-                    nxtNum++;
+                        answer++;
+                        nxtNum++;
                 }
 
                 if (nxtNum > 100)
