@@ -5,6 +5,7 @@ package me.day01.overview;
  * This is MainClass for overview
  * */
 public class MainClass { // 클래스 이름 (Camel Upper Case == Pascal Case)
+    public static int a = 0;
 
     /**
      * @method: main
@@ -23,12 +24,30 @@ public class MainClass { // 클래스 이름 (Camel Upper Case == Pascal Case)
         String str1; // 변수 선언
         str1 = "Hello Java!"; // 데이터 (리터럴, literal) 할당
         str1 = "Hello Python!";
+        System.out.println(str1);
+
+//        String str1;
+        String STR1; // 변수 scope
 
         // 상수 (변할 수 없는 수를 저장하는 공간)
         final String CONST_STRING; // 상수 선언
         CONST_STRING = "Hello Java!"; // 데이터 (리터럴, literal) 할당 (마지막)
 //      CONST_STRING = "Hello Python!"; // 컴파일 오류
 
+        //int a = 10;
+        //int a = 10;
+
+
+
+        if (true) {
+            int a = 10;
+            System.out.println(a);
+        }
+
+        for (int i = 0; i < 10; i++) {
+            int a = 10;
+            System.out.println(a);
+        }
 
 
         /*
@@ -37,5 +56,7 @@ public class MainClass { // 클래스 이름 (Camel Upper Case == Pascal Case)
         ㅁㄴㅇㅁㄴㅇ
         ㅁㄴㅇㅁㄴㅇ
         */
+
     }
+
 }

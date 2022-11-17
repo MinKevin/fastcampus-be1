@@ -1,35 +1,23 @@
 package me.day06.practice;
 
 import java.io.*;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
 
 public class Practice03 {
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-
-        int answer = 0;
-        while (st.hasMoreTokens()) {
-            answer++;
-            String nxt = st.nextToken();
-            //System.out.println(nxt);
-        }
-        System.out.println(answer);
-
-        //강사님
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(System.out));
 
         String word = bufferedReader.readLine().toLowerCase();
-        int[] counts = new int['z' - 'a' + 1];
-        char[] alpha = new char['z' - 'a' + 1];
+        int[] counts = new int['z' - 'a' + 1]; // 'a' <=    <= 'z'
+        char[] alpha = new char['z' - 'a' + 1]; // 'a' <=    <= 'z'
 
         for (int i = 0; i < alpha.length; i++) {
-            alpha[i] = (char) ('a' + i);
+            alpha[i] = (char)('a' + i);
         }
+
+        // a b c d e f g h .... z
+        // 0 1 2 3 ............ 25
+        // 4 1 0 0 ............ 0
 
         for (int i = 0; i < word.length(); i++) {
             counts[word.charAt(i) - 'a']++;
@@ -51,4 +39,3 @@ public class Practice03 {
         bufferedReader.close();
     }
 }
-

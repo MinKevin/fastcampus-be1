@@ -1,4 +1,4 @@
-package JavaBasic.Ch02;
+package javaBasic.ch02;
 
 public class Section04 {
     static class Student{

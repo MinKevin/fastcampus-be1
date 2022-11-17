@@ -1,4 +1,4 @@
-package JavaBasic.Ch01;
+package javaBasic.ch01;
 
 public class Section12 {
     public static void main(String[] args) {
