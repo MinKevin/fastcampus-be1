@@ -42,7 +42,7 @@ public class Section24 {
             double average = 0.0;
             for (int i = 0; i < subjectList.size(); i++){
                 subjectList.get(i).showInfo();
-                average += subjectList.get(i).getScore() / subjectList.size();
+                average += (double)subjectList.get(i).getScore() / subjectList.size();
             }
             System.out.println("평균은 " + average + "입니다.");
         }
@@ -70,6 +70,6 @@ public class Section24 {
 //        국어 : 70
 //        수학 : 85
 //        영어 : 100
-//        평균은 84.0입니다.
+//        평균은 85.0입니다.
     }
 }
